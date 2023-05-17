@@ -1,6 +1,6 @@
-<div class="product-list">
-    <h1>Product List</h1>
-    <table>
+<div class="container mt-3">
+    <h3>Product List</h3>
+    <table class="mt-3">
         <thead>
             <tr>
                 <th>Image</th>
@@ -15,7 +15,7 @@
             <tr *ngFor="let product of productList">
                 <td><img src="{{product.imageURL}}" /></td>
                 <td>{{product.name}}</td>
-                <td>{{product.price}}</td>
+                <td>£{{product.price}}</td>
                 <td>{{product.color}}</td>
                 <td>{{product.description}}</td>
                 <td><i class="fa-solid fa fa-trash fa-lg" (click)="deleteProduct(product._id)"></i>
